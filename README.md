@@ -17,7 +17,7 @@ python3.12 scan_host_async.py -t 3 -sh www.address.com
 
 ```
 [*] Scanning address: www.address.com
-[*] IP addr: 91.XXX.XXX.XXX
+[*] IP addr: X.X.X.X
 [*] Urls list to check: 131072
 [*] Adding addr: https://www.address.com:65535   
 [+] Alive addr http://www.address.com:80
