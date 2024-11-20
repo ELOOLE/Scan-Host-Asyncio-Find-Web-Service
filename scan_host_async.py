@@ -150,6 +150,7 @@ if __name__ == "__main__":
     addr_ip = socket.gethostbyname(addr)
 
     print(f"\n[*] Scanning address: {addr}")
+    print(f"[*] Scanning date: {str(datetime.datetime.now())}")
     print(f"[*] IP addr: {addr_ip}")
     print(f"[*] Urls list to check: {len(urls)}")
     asyncio.run(check_all_urls(urls, args.timeout))
