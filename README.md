@@ -39,6 +39,8 @@ python3.12 scan_host_async.py -t 3 -sh www.address.com
 > [!IMPORTANT]
 > utilization 1%.
 
+> [!WARNING]
+> It works. :)
 
 # !
 > [!CAUTION]
