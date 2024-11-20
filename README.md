@@ -5,7 +5,7 @@ Każdy request jest z innym losowym agentem.
 
 Przykład użycia:
 ```
-python3.12 scan_host_async.py -t 3 -sh ateneum.bip.gov.pl
+python3.12 scan_host_async.py -t 3 -sh www.adres.com
 ```
 
 standardowo timeout jest 5 s, w powyższym przykładzie zmieniono to na 3 s.
