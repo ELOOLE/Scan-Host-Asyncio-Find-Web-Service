@@ -2,10 +2,11 @@
 ## Scan host asyncio to find all web services
 ### Every request is send with random User-Agent
 
-Przykład użycia:
+Example:
 ```
 python3.12 scan_host_async.py -t 3 -sh www.adres.com
 ```
 
-Standardowo timeout jest 5 s, w powyższym przykładzie zmieniono na 3 s.
-Przełącznik -sh (single host) jest wskazaniem celu do skanownia. 
+### Switches:
+> -t (timeout), default timeout is 5 seconds 
+> -sh (single host), set target
