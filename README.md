@@ -1,5 +1,5 @@
 # Scan-Host-Asyncio-Find-Web-Service
-## Scan host asyncio to find all web services
+## Scan host asynchronous to find all web services
 ### Every request is send with random User-Agent
 
 Example:
