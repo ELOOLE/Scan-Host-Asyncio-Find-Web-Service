@@ -1,7 +1,6 @@
 # Scan-Host-Asyncio-Find-Web-Service
-Scan host asyncio to find all web services
-
-Każdy request jest z innym losowym agentem. 
+## Scan host asyncio to find all web services
+### Every request is send with random User-Agent
 
 Przykład użycia:
 ```
