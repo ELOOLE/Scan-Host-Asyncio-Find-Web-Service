@@ -33,6 +33,9 @@ python3.12 scan_host_async.py -t 3 -sh www.address.com
 [*] Execution time: 33.99 minutes
 ```
 
+> [!TIP]
+> Can scan faster if you set only one protocol. Default it scan http:// and https://
+
 # !
 > [!CAUTION]
 > Education use only.
