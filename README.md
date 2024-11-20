@@ -36,6 +36,10 @@ python3.12 scan_host_async.py -t 3 -sh www.address.com
 > [!TIP]
 > Can scan faster if you set only one protocol. Default it scan http:// and https://
 
+> [!IMPORTANT]
+> utilization 1%.
+
+
 # !
 > [!CAUTION]
 > Education use only.
