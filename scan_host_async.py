@@ -146,12 +146,38 @@ if __name__ == "__main__":
     for protocol in proto_table():
         for port in port_table(list(range(65536))):
             urls.append(f"{protocol}{addr}:{port}")
-    
-    addr_ip = socket.gethostbyname(addr)
 
     print(f"\n[*] Scanning address: {addr}")
     print(f"[*] Scanning date: {str(datetime.datetime.now())}")
-    print(f"[*] IP addr: {addr_ip}")
+    
+    try:
+        addr_ip = socket.gethostbyname(addr)
+        print(f"[*] IPv4 address: {addr_ip}")
+    except Exception as e:
+        print(f"[-] IPv4 address: none")
+        pass
+
+    try:
+        addr_hostname = socket.gethostbyaddr(addr_ip)
+        print(f"[+] Hostname: {addr_hostname}")
+    except Exception as e:
+        print(f"[-] Hostname: none")
+        pass
+
+    try:
+        addr_nameinfo = socket.getnameinfo((addr_ip, 0), 0)
+        print(f"[+] getnameinfo: {addr_nameinfo}")
+    except Exception as e:
+        print(f"[-] getnameinfo: none")
+        pass
+    
+    try:
+        addrinfo = socket.getaddrinfo(addr, 0, proto=socket.IPPROTO_TCP)
+        print(f"[+] addrinfo: {addrinfo}")
+    except Exception as e:
+        print(f"[-] addrinfo: none")
+        pass
+        
     print(f"[*] Urls list to check: {len(urls)}")
     asyncio.run(check_all_urls(urls, args.timeout))
 
