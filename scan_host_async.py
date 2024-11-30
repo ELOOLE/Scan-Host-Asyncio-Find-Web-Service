@@ -2,5 +2,5 @@ import asyncio
 
 
 @app.get("/")
-async def root():
+async def main():
     return {"message": "Hello, World!"}
