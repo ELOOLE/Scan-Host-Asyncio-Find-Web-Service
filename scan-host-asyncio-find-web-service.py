@@ -11,13 +11,7 @@ from aiohttp.client import ClientSession
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-from js import Response
 
-def on_fetch(request):
-    return Response.new("Hello World!")
-
-
-@app.get("/ua/")
 def random_ua():
     USER_AGENT_PARTS = {
         'os': {
