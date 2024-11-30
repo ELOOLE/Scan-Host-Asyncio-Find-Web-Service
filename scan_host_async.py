@@ -12,6 +12,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
+@app.get("/ua/")
 def random_ua():
     USER_AGENT_PARTS = {
         'os': {
