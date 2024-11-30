@@ -10,13 +10,11 @@ import aiohttp
 from aiohttp.client import ClientSession
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-from fastapi import FastAPI, Request
-from pydantic import BaseModel
 
+from js import Response
 
-@app.get("/")
-async def root():
-    return {"message": "Hello, World!"}
+def on_fetch(request):
+    return Response.new("Hello World!")
 
 
 @app.get("/ua/")
