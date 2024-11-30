@@ -1,4 +1,6 @@
-from js import Response
+import asyncio
 
-async def on_fetch(request, env):
-    return Response.new("Hello world!")
+
+@app.get("/")
+async def root():
+    return {"message": "Hello, World!"}
